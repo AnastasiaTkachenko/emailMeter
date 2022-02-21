@@ -1,7 +1,7 @@
 <template>
    <div>
 
-     <apexchart width="500" type="heatmap" :options="chartOptions" :series="series"></apexchart>
+     <apexchart width="500" type="bar" :options="chartOptions" :series="series"></apexchart>
    </div>
 </template>
 
