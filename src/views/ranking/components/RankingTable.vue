@@ -10,7 +10,7 @@
     </tr>
     </thead>
     <tbody class="bg-white">
-    <tr class="bg-blue-200 border-b-4 border-gray-50 cursor-pointer" v-for="row in data" :key="row.id" > 
+    <tr class="bg-blue-200 border-b-4 border-gray-50 hover:bg-blue-300 cursor-pointer" v-for="row in data" :key="row.id" > 
       <td class="px-2 py-2 md:px-6 md:py-2  whitespace-nowrap" v-for="column in columns" :key="column.prop">
         <router-link :to="'/'+ row.id">
         <!-- <router-link :to="{ name: '/' + row.id, params: { name: row.username } }"> -->

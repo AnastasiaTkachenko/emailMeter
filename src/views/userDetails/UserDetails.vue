@@ -5,18 +5,18 @@
       <div class="w-auto mt-10 border-b py-4 md:py-8 text-gray-600 border-gray-600"> USER:</div>
      
 
-     <a href="" class=" absolute top-8 right-4 md:right-12 py-2 px-10 md:py-3 md:px-14 border-solid border border-black text-sm cursor-pointer ">HOME</a>
+     <a href="/" class=" absolute top-8 right-4 md:right-12 py-2 px-10 md:py-3 md:px-14 border-solid border border-black text-sm cursor-pointer ">HOME</a>
 
 
 <div class="flex justify-between py-8 ">
         <div class="text-xl md:text-4xl"> Show activity</div>
-         <div class="uppercase py-2 "> display in:</div>
-      <button class="uppercase border-b-2 border-blue-400">bar graph</button>
-      <button class="uppercase border-b-2 border-blue-400">heat map</button>
+         <div class="uppercase py-2 ml-36 text-xs md:text-lg "> display in:</div>
+      <button class="uppercase border-b-2 border-blue-400 text-xs md:text-lg  hover:text-blue-500 ">bar graph</button>
+      <button class="uppercase border-b-2 border-blue-400 text-xs md:text-lg hover:text-blue-500 ">heat map</button>
 </div>
   <div class="flex w-36  "> 
-        <button class=" tracking-widest bg-blue-500 font-bold px-8 py-2 text-white">months</button>
-        <button class=" tracking-widest bg-blue-500 px-8 py-2 ml-6 font-bold text-white">weeks</button>
+        <button class=" tracking-widest bg-blue-500 font-bold px-8 py-2 text-white hover:bg-blue-600">months</button>
+        <button class=" tracking-widest bg-blue-500 px-8 py-2 ml-6 font-bold text-white hover:bg-blue-600">weeks</button>
   </div>
 
      
@@ -31,7 +31,7 @@
 
 <script>
 import Footer from "@/components/Footer";
-import Apexchart from "@/components/Apexchart";
+import Apexchart from "@/views/userDetails/Apexchart";
 
 export default {
   name: "UserDetails",
