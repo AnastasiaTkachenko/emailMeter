@@ -7,10 +7,10 @@ This project was developed with VUE 2 using the following dependencies :
 5. Vue router. 
 
 
-Project setup 
+Project setup :
 npm install
 
-Compiles and hot-reloads for development 
+Compiles and hot-reloads for development :
 npm run serve
 
 
