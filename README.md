@@ -6,12 +6,16 @@ This project was developed with VUE 2 using the following dependencies :
 4. Apexchart - charts library. 
 5. Vue router. 
 
+
+Project setup 
+npm install
+
+Compiles and hot-reloads for development 
+npm run serve
+
+
+
 In this project were implemented mobile and desktop versions. 
 Design created in Figma. 
 
 
-Project setup :
-npm install
-
-Compiles and hot-reloads for development :
-npm run serve
