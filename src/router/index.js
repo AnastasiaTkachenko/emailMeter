@@ -7,7 +7,6 @@ Vue.use(VueRouter)
 const routes = [
   {
     path: '/',
-    //TODO add ranking url
     name: 'Ranking',
     component: Ranking
   },

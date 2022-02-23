@@ -16,7 +16,6 @@ export const getUsers = async (from, to) => {
         });
     return data.results;
 
-
 }
 export const getUserDetails = async (userName) => {
     const {data} = await axios.get(`https://step-meter-pp4publmdq-ez.a.run.app/${userName}/workouts`, {
@@ -27,3 +26,5 @@ export const getUserDetails = async (userName) => {
     });
     return data.results;
 }
+
+

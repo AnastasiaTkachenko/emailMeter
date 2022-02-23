@@ -9,8 +9,7 @@
           counts. create your healthy future.</p>
       </div>
     </div>
-    <RankingTable  class="mt-4" :data="users"/>
-
+    <RankingTable  class="mt-4" :tableData="users"/>
      <Footer/>
   </div>
 </template>
@@ -30,8 +29,7 @@ export default {
       today: moment().format("YYYY-MM-DD"),
       yesterday: moment().subtract(1, 'days').format("YYYY-MM-DD"),
       weekAgo: moment().subtract(1, 'weeks').format("YYYY-MM-DD"),
-      monthAgo: moment().subtract(1, 'month').format("YYYY-MM-DD")
-
+      monthAgo: moment().subtract(1, 'month').format("YYYY-MM-DD"),
     }
   },
   mounted() {
@@ -41,7 +39,6 @@ export default {
 
     async getData() {
       const daily = await getUsers(this.yesterday, this.yesterday);
-      console.log("hello")
       this.users = daily.map(el => {
         return {id: el.id, username: el.username, daily: el['avg_steps']}
       })
