@@ -5,8 +5,7 @@
                                                        class="max-w-4/5 mx-auto max-h-32  md:max-h-48" alt="Logo"></div>
       <div class="w-full md:w-3/5 my-auto px-4">
         <p class="text-lg md:text-3xl lg:text-5xl sm:right-0.5"> Welcome to Daily Steps Ranking.</p>
-        <p class="text-xs md:text-xl lg:text-2xl uppercase text-gray-400 md:uppercase mt-2 md:mt-4 md:ml-2 md:ml-10"> Every step
-          counts. create your healthy future.</p>
+        <p class="text-xs md:text-xl lg:text-2xl uppercase text-gray-400 md:uppercase mt-2 md:mt-4 md:ml-2 md:ml-10"> Every step counts. create your healthy future.</p>
       </div>
     </div>
     <RankingTable  class="mt-4" :tableData="users"/>

@@ -9,12 +9,12 @@
       <div class="text-xl md:text-4xl"> Show activity</div>
       <div class="uppercase py-2 ml-36 text-xs md:text-lg "> display in:</div>
 
-      <button class="uppercase border-b-2 border-blue-400 text-xs md:text-lg  hover:text-blue-500 "
-              @click="setChartType('bar')">bar graph
-      </button>
-      <button class="uppercase border-b-2 border-blue-400 text-xs md:text-lg hover:text-blue-500 "
-              @click="setChartType('heatmap')">heat map
-      </button>
+      <ButtonComponent buttonName="bar"
+          @chartTypeSelected="setChartType('bar')"/> 
+
+          <ButtonComponent buttonName="heatmap"
+          @chartTypeSelected="setChartType('heatmap')"/> 
+         
     </div>
     <div class="flex w-36">
       <button class="tracking-widest bg-blue-500 font-bold px-8 py-2 text-white hover:bg-blue-600">
@@ -33,10 +33,11 @@
 <script>
 import Footer from "@/components/Footer";
 import Apexchart from "@/views/userDetails/Apexchart";
+import ButtonComponent from "@/components/ButtonComponent";
 
 export default {
   name: "UserDetails",
-  components: {Footer, Apexchart},
+  components: {Footer, Apexchart, ButtonComponent},
   data() {
     return {
       chartType: "bar",
