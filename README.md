@@ -10,4 +10,3 @@ In this project were implemented mobile and desktop versions.
 Design created in Figma. 
 
 
-
